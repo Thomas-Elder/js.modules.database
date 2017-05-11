@@ -1,0 +1,25 @@
+{
+  "name": "database",
+  "version": "1.0.0",
+  "description": "Learning mongodb",
+  "main": "db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thomas-Elder/js.modules.database.git"
+  },
+  "author": "thombas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thomas-Elder/js.modules.database/issues"
+  },
+  "homepage": "https://github.com/Thomas-Elder/js.modules.database#readme",
+  "dependencies": {
+    "mongodb": "^2.2.26"
+  },
+  "devDependencies": {
+    "jasmine": "^2.6.0"
+  }
+}
