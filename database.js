@@ -1,13 +1,12 @@
 
-var mongo = require('mongodb').MongoClient;
+var database = function(client, connectionURL){
 
-// Connection URL 
-var url = 'mongodb://localhost:27018/data';
+  client.connect(connectionURL, function(err, db) {
+    console.log(err);
+    console.log("Connected correctly to server");
+  
+    db.close();
+  }); 
+};
 
-// Use connect method to connect to the Server 
-mongo.connect(url, function(err, db) {
-  //assert.equal(null, err);
-  console.log("Connected correctly to server");
- 
-  db.close();
-});
+module.exports = database;
